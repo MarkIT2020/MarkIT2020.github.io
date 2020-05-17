@@ -1,0 +1,141 @@
+.hidden{
+	display: none;
+}
+
+.unhidden{
+	display: block;
+}
+
+#lightbox{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#navigation{
+	background-color: rgba(255, 255, 255, 0);
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0px;
+	left: 0px;
+	width: 200px;
+}
+
+#positionNavigation{
+	position: absolute;
+	top: 350px;
+	width: 100%;
+
+}
+
+.playerOption{
+	height: 90px;
+	width: 200px;
+	font-weight: bold;
+	background-color: #30e3ca;
+	vertical-align: top; 
+	font-size: 30px;
+	text-align: center;
+	line-height: 90px;
+	color: #01012b;
+	border-radius: 20px;
+}
+
+h1{
+	color: #d1f7ff;
+}
+
+#gameBoard{
+	width: 100%;
+	height: 86vh;
+	background-color: #d1f7ff;
+	position: relative;
+}
+
+#header{
+	width: 100%;
+	height: 10vh;
+	background-color: #01012b;
+	position: relative;
+}
+
+#title{
+	text-align: center;
+
+}
+
+#header h2{
+	position: absolute;
+	bottom: 0px;
+	margin-bottom: 2px;
+}
+
+#header #left{
+	left: 30px;
+	color: #d1f7ff;	
+}
+
+#header #right{
+	right: 30px;
+	color: #d1f7ff;	
+}
+
+.paddle{
+	width: 10px;
+	height: 100px;
+	background-color: black;
+}
+
+#paddle1{
+	position: absolute;
+	left: 5px;
+	top: 40vh;
+}
+
+#paddle2{
+	position: absolute;
+	right: 5px;
+	top: 40vh;	
+}
+
+#ball{
+	position: absolute;
+	left: 50vw;
+	top: 50vh;
+	width: 25px;
+	height: 25px;
+	background-color: red;
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
