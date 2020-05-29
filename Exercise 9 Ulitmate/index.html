@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <link rel='icon' href='favicon.ico' type='image/x-icon'/>
+      <title>Pong</title>
+      <!-- include an external style sheet -->
+      <link rel="stylesheet" href="pong.css">   
+    </head>
+  
+    <body>
+
+      <div id="header">
+        <h1 id="title">Testing</h1>
+        <h2 id="left">Player 1: <span id="score1">0</span>&nbsp;</h2>
+        <h2 id="right">Player 2: <span id="score2">0</span>&nbsp;</h2>
+      </div>
+
+      <div id="gameBoard">
+        <div id="paddle1" class="paddle"></div>
+        <div id="ball" ></div>
+        <div id="ball2" class = "hidden"></div>
+        <div id="paddle2" class="paddle"></div>
+      </div>
+    
+      <div id = "lightbox" class = "hidden"></div>
+      <div id = "lightbox1" class = "unhidden"></div>
+      <div id = "lightbox2" class = "hidden"></div>
+      <div id = "lightbox3" class = "hidden"></div>
+      <div id = "lightbox4" class = "hidden"></div>
+      <div id = "fogZone" class = "hidden"></div>
+      
+      <div id = "positionMessage">
+        <div id = "boundaryMessage" class = "hidden">
+          <img id = "x" src="images/x.png" alt = "close" onclick="continueGame()">
+          <h1 class = "titletext" id = "message1">&nbsp;</h1>
+          <p class = "titletext" id = "message2">&nbsp;</p>
+        </div>
+      </div>   
+
+      <div id="positionNavigation">
+        <div id= "navigation" class = "unhidden">
+          <div id = "classic" class = "playerOption" onclick="classic()">Classic Mode</div>
+          <div id = "action" class = "playerOption" onclick="action()">Action Mode</div>
+        </div>
+      </div>
+      <!-- include an external style sheet -->
+
+      <div id="controlpanel">
+        <div onclick="startGame()" id="start" class="controls">Start Game</div>
+<!--    <div onclick="stopGame()" id="stop" class="controls">Stop Game</div>
+        <div onclick="pauseGame()" id="pause" class="controls">Pause Game</div>
+        <div onclick="resumeGame()" id="start" class="controls">Resume Game</div> -->    
+      </div>
+
+      <img id = "pauseIcon" src="images/pause.png" alt = "pause" onclick="showPause()">
+
+      <div id="positionPauseNavigation">
+        <div id="pauseNavigation" class = "hidden">
+          <div id="pauseMessage">PAUSED</div>        
+          <div onclick="stopGame()" id= "pauseStopGame" class="pausePlayerOption">Stop Game</div>
+          <div onclick="resumeGame()" class="pausePlayerOption">Resume Game</div>     
+        </div>
+      </div>
+
+      <div id = "positionRule">
+        <div id = "boundaryRule" class = "hidden">
+          <h1 class = "ruleText" id = "text1">&nbsp;</h1>
+          <p class = "ruleText" id = "text2">&nbsp;</p>
+        </div>
+      </div>        
+
+      <script src="pong.js"></script>
+
+    </body>
+  
+</html>
+
+
+
+
+
+
