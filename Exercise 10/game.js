@@ -112,8 +112,11 @@ function tryToMove(direction){
 
 	// if there is a fence, and rider is on, move 2 grid and animate the process
 	if(nextClass.includes ("fence")){
+		// there must be a rider
 		if(riderOn){
+
 			gridBoxes[currentLocationOfHorse].className = "";
+			oldClassName = gridBoxes[nextLocation].className;
 			
 			if(direction == "left"){
 				nextClass = "jumpleft";
@@ -134,7 +137,7 @@ function tryToMove(direction){
 			}
 			// show horse jumping
 			gridBoxes[nextLocation].className = nextClass;
-//console.log(oldClassName);
+			//console.log(oldClassName);
 			setTimeout(function(){
 				// set jump back to just a fence 
 
