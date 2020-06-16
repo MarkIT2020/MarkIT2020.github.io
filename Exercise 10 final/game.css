@@ -56,14 +56,13 @@
 /*.bridge{background-image: url("images/bridge.png");} */
 
 
-.bridge{background-color: #CAA472 !important;}*/
+.bridge{background-color: #CAA472 !important;}
 
 
 body{
-	background-color: white;
+	background-color: green;
 }
 
-/* game board*/
 #header{
 	color: black;
 	width: 99%;

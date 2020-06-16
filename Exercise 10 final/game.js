@@ -718,7 +718,7 @@ function changeVisibility (divID){
 function showRule(text1, text2){
 
 	var text1 = "Game rule:";
-	var text2 = "Use Arrow keys to move, do not run into enemies with red hat. The cowboy cannot jump over fence by himself, and the horse can only jump over the fence with the cowboy on him.";
+	var text2 = "Use Arrow keys to move, do not run into enemies with red hat. The cowboy cannot jump over fence by himself, and the horse can only jump over the fence with the cowboy on him. Also, don't run into bullets";
 
 	document.getElementById("text1").innerHTML = text1;
 	document.getElementById("text2").innerHTML = text2;
