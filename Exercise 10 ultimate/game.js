@@ -446,8 +446,6 @@ function loadLevel(){
 	// load the board
 
 	document.addEventListener('keydown', key, true);
-
-changeVisibility("pauseIcon");
  
  	for(i = 0; i < gridBoxes.length; i++){
 		gridBoxes[i].className = levelMap[i];
